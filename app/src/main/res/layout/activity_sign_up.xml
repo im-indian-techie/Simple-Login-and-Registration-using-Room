@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SignUpActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pink" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etName"
+                android:padding="15dp"
+                android:background="@drawable/et_backround"
+                android:hint="Enter name"
+                android:singleLine="true"
+                />
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etEmail"
+                android:padding="15dp"
+                android:background="@drawable/et_backround"
+                android:hint="Enter email-id"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                />
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPhone"
+                android:padding="15dp"
+                android:background="@drawable/et_backround"
+                android:hint="Enter phone number"
+                android:singleLine="true"
+                android:inputType="phone"/>
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPlace"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:background="@drawable/et_backround"
+                android:hint="Enter place"
+                />
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:background="@drawable/et_backround"
+                android:hint="Enter password"
+                android:inputType="textPassword"/>
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etConfirmPass"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:background="@drawable/et_backround"
+                android:hint="Confirm password"
+                android:inputType="textPassword"/>
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSignUp"
+                android:background="@drawable/button_pressed"
+                android:text="SignUp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>
